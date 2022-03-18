@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>valider votre nom</title>
+   
+    <link rel="stylesheet" href="validationstyle.css">
+</head>
+<body >
+    <div class="cont">
+        <h1 class="titre">Entrer Votre nom</h1>
+        <form onsubmit="validation(event)">         
+            <input type="text" onChange="removeError()" id="nom" placeholder="Votre Nom">
+            <button type="submit" >Tester</button>  
+        </form>
+        <p id="message" ></p>
+    </div>
+    
+</body>
+<script src="validation.js"></script>
+</html>
